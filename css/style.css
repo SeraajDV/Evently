@@ -13,6 +13,10 @@ body {
     background-color: rgba(247, 149, 37, 0.1);
 }
 
+.main {
+    background: #fff;
+}
+
 #wrapper {
     width: 90%;
     height: 100vh;
