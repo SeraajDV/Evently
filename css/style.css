@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +11,17 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+
 body {
     background-color: rgba(247, 149, 37, 0.1);
+}
+
+
+li, a, .nav_button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
 }
 
 .main {
