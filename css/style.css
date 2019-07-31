@@ -17,6 +17,7 @@ body {
 }
 
 
+
 li, a, .nav_button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -24,19 +25,67 @@ li, a, .nav_button {
     color: #fff;
 }
 
+.main-contain {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 827px;
+    z-index: 3;
+}
+
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 3;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+.site-title h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.site-title h1 .name {
+    color: rgb(243, 158, 0);
+}
+
+.site-title h2 {
+    font-size: 20px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .main-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
     background-color: rgb(0, 0, 0);
     height: 2vh;
+    z-index: 2;
 }
 
 .logo {
     cursor: pointer;
-    width: 5%;
+    margin-right: auto;
+    width: 7%;
 }
 
 .nav_links {
@@ -58,6 +107,7 @@ li, a, .nav_button {
 }
 
 .nav_button {
+    margin: 3px;
     padding: 9px 25px;
     background-color: rgba(243, 158, 0, 0.9);
     border: none;
