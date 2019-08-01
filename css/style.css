@@ -122,6 +122,15 @@ li, a, .nav_button {
     color: #000;
 }
 
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
 .main {
     background: #fff;
 }
@@ -257,7 +266,35 @@ form {
     border-bottom: 2px solid rgb(243, 158, 0);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+    .logo {
+        display: none;
+    }
+
+    .main-content {
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .nav_button {
+        display: none;
+    }
+
+    .site-title .landing-title {
+        font-size: 40px;
+    }
+
+    .site-title .sub-heading {
+        font-size: 20px;
+    }
+
     .form-container::before {
         height: 10rem;
     }
