@@ -43,12 +43,12 @@ exports.create = (req, res) => {
     })
 };
 
-/**
+/** 
  * @desc GET METHOD for 'events' - displaying available public events
  */
 exports.findAll = (req, res) => {
   EventModel
-    .find()true
+    .find()
     .then(events => {
       res.json(events);
     })

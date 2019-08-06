@@ -26,7 +26,7 @@ li, a, .nav_button {
 }
 
 .main-contain {
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -118,8 +118,21 @@ li, a, .nav_button {
 }
 
 .nav_button:hover {
-    background-color: rgba(255, 169, 8, 0.952);
+    background-color: rgba(255, 169, 8, 0.95);
     color: #000;
+}
+
+.current-page {
+    border-top: rgb(255, 169, 8) solid 1px;
+}
+
+.menu-toggle {
+    color: #fff;
+    font-size: 24px;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
 }
 
 .main {
@@ -257,7 +270,7 @@ form {
     border-bottom: 2px solid rgb(243, 158, 0);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .form-container::before {
         height: 10rem;
     }
@@ -272,4 +285,31 @@ form {
         transform: initial;
         box-shadow: none; 
     }
+
+
+    /* .main-header {
+        padding: 0 40px;
+    } */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav, 
+    .nav_button{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        top: 50px;
+        left: 0;
+        transition: 0.5%
+    }
+/* 
+    header nav,
+    .nav_links {
+        display: flexbox;
+        text-align: center;
+    } */
 }
